@@ -11,6 +11,8 @@ import Github, { githubInfoLoader } from './components/Github.jsx';
 import UserContextProvider from './context/UserContextProvider.jsx';
 import Login from './components/Login.jsx';
 import Profile from './components/Profile.jsx';
+import ThemeProvider from './context/ThemeContext.js';
+import ThemeSwitcher from './components/ThemeSwitcher.jsx';
 
 
 
@@ -45,7 +47,8 @@ const router =createBrowserRouter(
       <Route path='user/:id' element={<User/>}/>
       <Route loader={githubInfoLoader} path='github' element={<Github/>}/>
       <Route path='login' element={<Login/>}/>
-      <Route path='Profile' element={<Profile/>}/>
+      <Route path='profile' element={<Profile/>}/>
+      <Route path='themeswitcher' element={<ThemeSwitcher/>}/>
     </Route>
   )
 )
@@ -57,5 +60,5 @@ createRoot(document.getElementById('root')).render(
     <UserContextProvider>
     <RouterProvider router={router}/>
     </UserContextProvider>
-  </StrictMode>,
+  </StrictMode>
 )

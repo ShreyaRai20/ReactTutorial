@@ -1,4 +1,4 @@
-import UserContextProvider from '../../context/UserContext';
+import UserContextProvider from './context/UserContext';
 import Login from './Login';
 import Profile from './Profile';
 

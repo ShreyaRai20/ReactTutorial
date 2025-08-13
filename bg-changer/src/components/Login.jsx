@@ -11,7 +11,7 @@ function Login() {
         setUser({username, password})
     }
   return (
-    <div>
+    <div className='dark:bg-black dark:text-white'>
       <h1>
         Login
       </h1>

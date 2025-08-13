@@ -5,11 +5,12 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import Home from './components/Home.jsx'
-import PasswordGenerator from './components/PasswordGenerator.jsx'
+import PasswordGenerator from './components/Projects/password-generator/PasswordGenerator.jsx'
 import Contact from './components/Contact.jsx'
-import UserContextProvider from './context/UserContext.jsx'
-import Login from './components/ContextProject/Login.jsx'
-import ContextPage from './components/ContextProject/ContextPage.jsx'
+import ContextPage from './components/Projects/ContextProject/ContextPage.jsx'
+import ThemeChanger from './components/Projects/theme-switcher/ThemeChanger.jsx'
+import ProjectPage from './components/Projects/ProjectPage.jsx'
+import ProjectPageLayout from './components/Projects/ProjectPageLayout.jsx'
 
 const routes = [
   {
@@ -20,7 +21,23 @@ const routes = [
         path:'',
         element: <Home/>,
       },
-      {
+        {
+          path:'contact',
+          element: <Contact/>
+      },
+        {
+          path:'theme-changer',
+          element: <ThemeChanger/>
+      },
+        {
+          path:'/projects',
+          element: <ProjectPageLayout/>,
+          children:[
+            {
+        path:'',
+        element: <ProjectPage/>,
+      },
+                  {
         path:'password-generator',
         element: <PasswordGenerator/>,
       },
@@ -29,8 +46,11 @@ const routes = [
         element: <ContextPage/>,
       },
         {
-          path:'contact',
-          element: <Contact/>
+          path:'theme-changer',
+          element: <ThemeChanger/>
+      },
+
+          ]
       }
     ], 
   },
