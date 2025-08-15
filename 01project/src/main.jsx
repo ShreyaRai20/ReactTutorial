@@ -11,6 +11,8 @@ import ContextPage from './components/Projects/ContextProject/ContextPage.jsx'
 import ThemeChanger from './components/Projects/theme-switcher/ThemeChanger.jsx'
 import ProjectPage from './components/Projects/ProjectPage.jsx'
 import ProjectPageLayout from './components/Projects/ProjectPageLayout.jsx'
+import FormPage from './components/Projects/form-project/FormPage.jsx'
+import TodoPage from './components/Projects/Todo/TodoPage.jsx'
 
 const routes = [
   {
@@ -49,6 +51,15 @@ const routes = [
           path:'theme-changer',
           element: <ThemeChanger/>
       },
+      {
+        path:"form",
+        element: <FormPage/>
+      },
+      {
+        path:"todo",
+        element: <TodoPage/>
+      },
+
 
           ]
       }

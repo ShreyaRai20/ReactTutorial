@@ -12,6 +12,14 @@ const projects = [
     {
         name: "Theme changer",
         to: "projects/theme-changer"
+    },
+    {
+        name: "form",
+        to: "projects/form"
+    },
+    {
+        name: "TO Do",
+        to: "projects/todo"
     }
 ]
 
