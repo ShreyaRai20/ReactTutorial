@@ -13,7 +13,7 @@ function TodoList() {
     return (
         <div>
             <div className="text-2xl font-bold text-yellow-400 mb-3">Todo</div>
-            {Array.isArray(todos) && todos.map(todo=>(
+            {todos.map(todo=>(
                 <li
                     key={todo.id}
                     className="flex justify-between items-center mb-2 p-2 rounded-md bg-gray-800"

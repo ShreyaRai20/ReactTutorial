@@ -13,6 +13,7 @@ import ProjectPage from './components/Projects/ProjectPage.jsx'
 import ProjectPageLayout from './components/Projects/ProjectPageLayout.jsx'
 import FormPage from './components/Projects/form-project/FormPage.jsx'
 import TodoPage from './components/Projects/Todo/TodoPage.jsx'
+import UIPage from './components/Projects/ui-projects/UIPage.jsx'
 
 const routes = [
   {
@@ -58,6 +59,10 @@ const routes = [
       {
         path:"todo",
         element: <TodoPage/>
+      },
+            {
+        path:"uiprojects",
+        element: <UIPage/>
       },
 
 

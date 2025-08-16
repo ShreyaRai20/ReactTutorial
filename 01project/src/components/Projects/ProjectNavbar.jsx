@@ -20,6 +20,10 @@ const projects = [
     {
         name: "TO Do",
         to: "projects/todo"
+    },
+    {
+        name: "UI Projects",
+        to: "projects/uiprojects"
     }
 ]
 
